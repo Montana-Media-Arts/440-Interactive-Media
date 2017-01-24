@@ -1,6 +1,6 @@
 # Interactive Media | Week 1
 
-- Topic: Introduction to "interactive systems"
+- Topic: Introduction to "interactive media"
 - Focus Areas:
     1. Syllabus & Class overview.
 

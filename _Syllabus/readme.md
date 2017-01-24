@@ -7,7 +7,9 @@
 
 - E-Mail: [michael.musick@umontana.edu](mailto:michael.musick@umontana.edu).
 - Office: McGill Hall, 224.
-- Office Hours: Wed, 12:30PM - 2:00PM (please e-mail to confirm)
+- Office Hours:
+    - Wed, 12:30PM - 2:00PM (please e-mail to confirm)
+    - Thu, 12:30PM - 2:00PM (please e-mail to confirm)
 
 
 ## COURSE OVERVIEW
@@ -75,7 +77,7 @@ Attendance is mandatory. Please inform your teacher via email if you are going t
 ### Participation
 This class will be participatory, you are expected to participate in discussions and give feedback to other students both in class and through the digital portals.
 
-Additionally, there will be readings for this course that will be discussed in class. You are expected to be prepared to participate in these discussions. It will be noted if you choose not to, or are unable to participate in such discussions. 
+Additionally, there will be readings for this course that will be discussed in class. You are expected to be prepared to participate in these discussions. It will be noted if you choose not to, or are unable to participate in such discussions.
 
 
 ### Assessment

@@ -4,7 +4,9 @@
 
 - E-Mail: [michael.musick@umontana.edu](mailto:michael.musick@umontana.edu).
 - Office: McGill Hall, 224.
-- Office Hours: Wed, 12:30PM - 2:00PM (please e-mail to confirm)
+- Office Hours:
+    - Wed, 12:30PM - 2:00PM (please e-mail to confirm)
+    - Thu, 12:30PM - 2:00PM (please e-mail to confirm)
 
 
 
@@ -21,4 +23,4 @@ This course will include a mix of reading, discussion, interactive development, 
 #### [Syllabus](https://github.com/Montana-Media-Arts/440-Interactive-Media/tree/master/_syllabus)
 
 # Weekly Breakdown
-Please check into the appropriate sub-directory for information about the current week, as well as assignments. 
+Please check into the appropriate sub-directory for information about the current week, as well as assignments.
