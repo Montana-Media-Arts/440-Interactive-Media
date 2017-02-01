@@ -22,5 +22,9 @@ This course will include a mix of reading, discussion, interactive development, 
 
 #### [Syllabus](https://github.com/Montana-Media-Arts/440-Interactive-Media/tree/master/_syllabus)
 
+
+<!-- 
 # Weekly Breakdown
 Please check into the appropriate sub-directory for information about the current week, as well as assignments.
+
+ -->
