@@ -26,9 +26,8 @@ function draw() {
 	fill('blue');
 	noStroke();
 	ellipse(posX,posY,20,20);
-	//position change
-	posX = posX + deltaX;
-	posY = posY + deltaY;
+
+	posChange();
 
 	if (posX >= width || posX < 0){
 		posX = 10;
@@ -51,7 +50,9 @@ function draw() {
 }
 //pos change function
 function posChange(){
-
+	//position change
+	posX = posX + deltaX;
+	posY = posY + deltaY;
 }
 
 
