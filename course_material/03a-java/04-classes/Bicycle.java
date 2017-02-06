@@ -1,6 +1,6 @@
 public class Bicycle {
 
-    private int cadence;
+    public int cadence;
     private int gear;
     private int speed;
 
@@ -8,7 +8,7 @@ public class Bicycle {
 
     private static int numberOfBicycles = 0;
 
-
+    // Constructo Method
     public Bicycle(int startCadence,
                    int startSpeed,
                    int startGear) {
