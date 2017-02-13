@@ -1,4 +1,45 @@
+# Wednesday, February 15th
 
-## Readings for Wednesday, February 15th
+## 1. Project Check-In (30 minutes)
 
-- [Khatchadourian, Raffi. "Alternate Endings" _The New Yorker_. January 30th, 2017.](http://www.newyorker.com/magazine/2017/01/30/alternate-endings)
+Quick show and tell of our projects and current states.
+
+- Please focus on the projects relationship to interactive principles & theory.
+    - How do you achieve "interaction"?
+    - What are the active "agents", or agents with "stakes"?
+    - What interaction principles are you working with? How are they manifest?
+- When appropriate, we will discuss the effectiveness of your piece.
+- When necessary, we will discuss technical issues holding you back.
+
+
+## 3. How can we create a "sense of agency"
+
+1. What is "Agency"?
+2. What is necessary for a successful perception of agency?
+3. How much agency is necessary for a system to be "interactive"?
+4. What isn't agency?
+
+
+
+#### Basic Approaches to Agency
+
+- randomness
+    - random walker
+- probability
+    - Raw probability
+    - Dynamic Probability (i.e. the walker is more likely to mive in the direction of the mouse. )
+
+
+
+
+
+# Reading
+
+Please read the following to prep for Grant's intro to Unity on Wednesday
+
+- [Intro to Unity; Pt I](https://www.raywenderlich.com/147687/introduction-unity-getting-started-part-12)
+- [Intro to Unity; Pt II](https://www.raywenderlich.com/149036/introduction-unity-getting-started-part-22)
+
+Please read the following chapter by Daniel Shiffman to review some of the material and ideas covered in class today.
+
+- [Shiffman, _Nature of Code_, "Introduction"](http://natureofcode.com/book/introduction/)
