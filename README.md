@@ -23,8 +23,51 @@ This course will include a mix of reading, discussion, interactive development, 
 ### [Direct Link to Syllabus](https://github.com/Montana-Media-Arts/440-Interactive-Media/tree/master/_syllabus)
 
 
-<!--
+
 # Weekly Breakdown
 Please check into the appropriate sub-directory for information about the current week, as well as assignments.
 
- -->
+All detailed information exists in separate class directories, under "course_materials/".
+
+
+#### 1a
+
+- Introductions
+
+
+#### 1b - What is Interaction
+
+- Discussion of two readings
+
+
+#### 2 (a & b)
+
+- Overview of P5.js
+
+
+#### 3 (a & b)
+
+- Overview of Java and Processing
+
+
+#### 4a
+
+- Project 1 Check-Ins
+
+
+#### 4b
+
+- Unity Overview with Grant
+
+
+#### 5a - No Class
+
+
+#### 5b
+
+- Project 1 Presentations and Critique
+
+
+#### 6a
+
+- What is agency and how can we accomplish it?
