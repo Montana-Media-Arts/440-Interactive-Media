@@ -20,7 +20,7 @@ The primary goal for this course is to explore the theory and technique of creat
 
 This course will include a mix of reading, discussion, interactive development, projects, and tests. As this is an intensive course in a developing area, students are expected to be in class and to participate.
 
-### [Direct Link to Syllabus](https://github.com/Montana-Media-Arts/440-Interactive-Media/tree/master/_syllabus)
+### [Direct Link to Syllabus](https://github.com/Montana-Media-Arts/440-Interactive-Media/tree/master/_Syllabus)
 
 
 
