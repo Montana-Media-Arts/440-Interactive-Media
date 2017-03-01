@@ -17,4 +17,4 @@
     - random walker
 - probability
     - Raw probability
-    - Dynamic Probability (i.e. the walker is more likely to mive in the direction of the mouse. )
+    - Dynamic Probability (i.e. the walker is more likely to move in the direction of the mouse. )
