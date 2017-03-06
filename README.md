@@ -71,3 +71,14 @@ All detailed information exists in separate class directories, under "course_mat
 #### 6a
 
 - What is agency and how can we accomplish it?
+
+
+#### 6b
+
+- Cont' from 6a.
+- Discussion of reading. Franklin, Stan and Art Graesser. _Is It an Agent, or Just a Program?: A Taxonomy for Autonomous Agents_. 1996. [moodle link](https://moodle.umt.edu/pluginfile.php/1061164/block_quickmail/attachment_log/126219/1488214110_attachments.zip?forcedownload=1)
+
+
+#### 7a
+
+- Programming Agency
