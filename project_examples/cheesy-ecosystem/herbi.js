@@ -84,10 +84,14 @@ Herbi.prototype.lookForFood = function(foodArr){
 
 Herbi.prototype.draw = function() {
 
+    var heading = this.velocity.heading()-HALF_PI;
+
     push();
+
 
     translate(this.pos.x, this.pos.y);
 
+    rotate(heading);
     rectMode(CENTER);
     var thingWidth = map(this.size, 0, this.maxSize, this.minWidth, this.maxWidth);
     var thingHeight = thingWidth * 0.3;
@@ -95,6 +99,7 @@ Herbi.prototype.draw = function() {
 
     stroke(200, 0, 0);
     line(-thingWidth/2, 0, thingWidth/2, 0);
+    line(-thingWidth/2, thingHeight/4, thingWidth/2, thingHeight/4);
 
     pop();
 };
