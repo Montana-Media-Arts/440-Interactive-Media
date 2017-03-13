@@ -1,8 +1,8 @@
-function Herbi(pos_x, pos_y){
+function Omni(pos_x, pos_y){
     this.pos = createVector(pos_x,pos_y);
     this.velocity = createVector(0, 0);
     this.accel = createVector(0, 0);
-    this.maxSpeed = 10;
+    this.maxSpeed = 2;
     this.size = 1;
     this.maxSize = 10;
     this.born = Date.now();
@@ -15,32 +15,23 @@ function Herbi(pos_x, pos_y){
 	this.eating = false;
 	this.timeEating = 0;
 	this.myFood = false;
-
-	this.pred = false;
 }
 
-Herbi.prototype.frame = function (foodArr, predArr) {
+Omni.prototype.frame = function (foodArr) {
     this.draw();
     this.grow();
-	this.lookForPred(predArr);
     this.lookForFood(foodArr);
 	this.eat();
     this.move();
 };
 
 
-Herbi.prototype.move = function() {
+Omni.prototype.move = function() {
 
 	var moveAmt;
 	var mult = 1;
 
-	if (this.myPred) {
-		moveAmt = p5.Vector.sub(this.myPred.pos, this.pos);
-		moveAmt.normalize();
-		moveAmt.rotate(PI);
-
-
-	} else if (this.myFood) {
+	if (this.myFood) {
 		// text(this.myFood, 100, 100);
 
 		moveAmt = p5.Vector.sub(this.myFood.pos, this.pos);
@@ -66,7 +57,7 @@ Herbi.prototype.move = function() {
 
 };
 
-Herbi.prototype.checkBounds = function(){
+Omni.prototype.checkBounds = function(){
     if (this.pos.x >= width ) {
         this.velocity.x = 0;
         this.accel.x *= -1;
@@ -89,7 +80,7 @@ Herbi.prototype.checkBounds = function(){
 };
 
 
-Herbi.prototype.lookForFood = function(foodArr){
+Omni.prototype.lookForFood = function(foodArr){
 
     for (var i = 0; i < foodArr.length; i++) {
         var food = foodArr[i];
@@ -109,27 +100,7 @@ Herbi.prototype.lookForFood = function(foodArr){
 
 };
 
-Herbi.prototype.lookForPred = function(predArr){
-
-    for (var i = 0; i < predArr.length; i++) {
-        var pred = predArr[i];
-
-
-        var predDist = p5.Vector.dist(pred.pos,this.pos);
-
-        textSize(50);
-        // text(predDist, 50, 50);
-
-
-        if (predDist <= this.maxFoodDist && pred.size >= 2) {
-            this.myPred = pred;
-            // text("food!", 50, 50);
-        }
-    }
-
-};
-
-Herbi.prototype.eat = function(){
+Omni.prototype.eat = function(){
 	if (this.myFood) {
 		if ( p5.Vector.dist(this.pos, this.myFood.pos) <= 1 ) {
 			// text("Im on food", 100, 100);
@@ -151,7 +122,7 @@ Herbi.prototype.eat = function(){
 	}
 }
 
-Herbi.prototype.draw = function() {
+Omni.prototype.draw = function() {
 
     push();
 
@@ -160,22 +131,30 @@ Herbi.prototype.draw = function() {
 	var heading = this.velocity.heading();
 	rotate(heading + HALF_PI);
 
-    rectMode(CENTER);
-    var thingWidth = map(this.size, 0, this.maxSize, this.minWidth, this.maxWidth);
-    var thingHeight = thingWidth * 0.3;
-    rect(0, 0, thingWidth, thingHeight);
 
-    stroke(200, 0, 0);
-    line(-thingWidth/2, 0, thingWidth/2, 0);
-    line(-thingWidth/2, thingHeight/4, thingWidth/2, thingHeight/4);
+    var thingWidth = map(this.size, 0, this.maxSize, this.minWidth, this.maxWidth);
+    var thingHeight = thingWidth * 2.6;
+
+	fill(200, 37, 95);
+	push();
+	scale(1, -1);
+    arc(0, 0, thingWidth, thingHeight, 0, PI, CHORD);
+	pop();
+
+	fill(2, 60, 127);
+	var eye_x = thingWidth * 0.165;
+	var eye_y = thingHeight * -0.3;
+	var eye_size = thingWidth * 0.125;
+	ellipse(-eye_x, eye_y, eye_size, eye_size);
+	ellipse(eye_x, eye_y, eye_size, eye_size);
 
     pop();
 };
 
-Herbi.prototype.grow = function(){
+Omni.prototype.grow = function(){
     var growRate = 11;
 
-    // Herbi can grow
+    // Omni can grow
     this.age = floor((Date.now() - this.born)/1000);
 
 
