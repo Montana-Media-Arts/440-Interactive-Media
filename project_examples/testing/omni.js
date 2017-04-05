@@ -14,15 +14,11 @@ function Herbi(pos_x, pos_y){
     this.maxFoodDist = 200;
 	this.eating = false;
 	this.timeEating = 0;
-	this.myFood = false;
-
-	this.pred = false;
 }
 
-Herbi.prototype.frame = function (foodArr, predArr) {
+Herbi.prototype.frame = function (foodArr) {
     this.draw();
     this.grow();
-	this.lookForPred(predArr);
     this.lookForFood(foodArr);
 	this.eat();
     this.move();
@@ -34,13 +30,7 @@ Herbi.prototype.move = function() {
 	var moveAmt;
 	var mult = 1;
 
-	if (this.myPred) {
-		moveAmt = p5.Vector.sub(this.myPred.pos, this.pos);
-		moveAmt.normalize();
-		moveAmt.rotate(PI);
-
-
-	} else if (this.myFood) {
+	if (this.myFood) {
 		// text(this.myFood, 100, 100);
 
 		moveAmt = p5.Vector.sub(this.myFood.pos, this.pos);
@@ -109,26 +99,6 @@ Herbi.prototype.lookForFood = function(foodArr){
 
 };
 
-Herbi.prototype.lookForPred = function(predArr){
-
-    for (var i = 0; i < predArr.length; i++) {
-        var pred = predArr[i];
-
-
-        var predDist = p5.Vector.dist(pred.pos,this.pos);
-
-        textSize(50);
-        // text(predDist, 50, 50);
-
-
-        if (predDist <= this.maxFoodDist && pred.size >= 2) {
-            this.myPred = pred;
-            // text("food!", 50, 50);
-        }
-    }
-
-};
-
 Herbi.prototype.eat = function(){
 	if (this.myFood) {
 		if ( p5.Vector.dist(this.pos, this.myFood.pos) <= 1 ) {
@@ -153,14 +123,13 @@ Herbi.prototype.eat = function(){
 
 Herbi.prototype.draw = function() {
 
-    var heading = this.velocity.heading()-HALF_PI;
-
     push();
-
 
     translate(this.pos.x, this.pos.y);
 
-    rotate(heading);
+	var heading = this.velocity.heading();
+	rotate(heading + HALF_PI);
+
     rectMode(CENTER);
     var thingWidth = map(this.size, 0, this.maxSize, this.minWidth, this.maxWidth);
     var thingHeight = thingWidth * 0.3;
